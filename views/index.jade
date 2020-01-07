@@ -1,0 +1,165 @@
+html(lang='en')
+	head
+		title= pageTitle
+		link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,600italic,700,700italic', rel='stylesheet', type='text/css')
+		link(href='https://fonts.googleapis.com/css?family=Roboto+Slab:300', rel='stylesheet', type='text/css')
+
+		script(src='https://code.jquery.com/jquery-2.1.4.min.js')
+		script(src='/js/home.js')
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+		script(src='https://app.convertkit.com/assets/CKJS4.js?v=21')
+		link(rel='stylesheet', href='/css/home.css')
+		link(href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAACwAAAAsAAAALAAAACwAAAAsAAAAOAAAAJgAAACIAAAAMAAAACwAAAAsAAAALAAAACwAAAAsAAAACAAAAI1MyC6BTMguhUzILoVMyC6FTMguhUzILoaZkFf+mZBX/UzILo1MyC6FTMguhUzILoVMyC6FTMguhAAAAI2A+FYqRnab/k5ug/5OboP+UnKH/lZ2i/5aeo/+Oo7f/jqO3/5Wdo/+TnKH/kZqg/5CaoP+RmqD/kJyl/18+FYpfPRSKudjw/8jm+v+93/T/sNTr/6DG3v+RttD/lMDb/5rF3v+fvtL/xtvn//b7/f/+////7/v//8Pe8P9fPRSKXz0UirrY7//F4vb/u9vx/7LV7P+nz+f/m8Hb/9fn8/+Ywtz/udbo/9Xn8f/z+Pv/+f3//+n2/v/E3u//XjwUil48FIq92vD/xeL1/7jY7f+tydv/ytvm//r9///q+P//lsHb/7jV5//V5vH/8vj7//n9///p9v7/xt/w/148FIpePBSKwNzx/8Xi9f+10OL/5/f///n+///2+///6ff//5bB2/+41ef/1ebx//L4+//5/f//6fb+/8jg8P9ePBSKXjwUisPd8f/E4vX/tc/i/+X1///4/f//9vv//+n3//+Wwdv/uNXn/9Xm8f/y+Pv/+f3//+n2/v/L4fH/XjwUil48FIrG3/L/xOL1/7XP4v/l9f//+P3///b7///p9///lsHb/7jV5//V5vH/8vj7//n9///p9v7/zePy/148FIpePBSKyeHy/8Ti9f+1z+L/5fX///j9///2+///6ff//5bB2/+41ef/1ebx//L4+//5/f//6fb+/9Dl8/9ePBSKXjwUiszj8//E4vX/tc/i/+X1///4/f//9vv//+n3//+Wwdv/uNXn/9Xm8f/y+Pv/+f3//+n2/v/S5vP/XjwUil48FIrP5PT/w+H2/7TP4v/l9f//+P3///b7///p9///lsHb/7jV5//V5vH/8vj7//n9///p9v7/1Of0/108FIYAAAAEscre/8PX5f+qv87/5fX///j9///2+///6fj//5bC3f+51un/0OLt/+Tq7v/b4uf/1eDn/7XM3v8AAAAEAAAAAAAAAAAAAAAAi5unnOb1///4/f//+v7//8nd6vZLUlc/VV5kf1BYX2hMVFokTFRZGwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFdiaorn9v//+v3//7PJ2dUAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADX4ep/7Pb9fNDd5S8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAIABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAEAAOD/AADh/wAA//8AAA==" rel="icon" type="image/x-icon")
+		script(type='text/javascript').
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o),
+					m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-67135784-1', 'auto');
+			ga('send', 'pageview');
+	body
+		.dialog-background.dialog-subscribe.hide
+			.dialog.register-dialog
+				.dialog-title
+					.progress
+						.progress-bar.progress-bar-striped.active(role="progressbar", aria-valuenow="50", aria-valuemin="0", aria-valuemax="100" style="width: 50%;") 50% complete
+					.btn-close.btn ×
+				.dialog-body
+					// Begin MailChimp Signup Form
+					.popup-cta-description(style="font-size: 30px;")
+						center(style="text-transform: capitalize;")
+							| Learn how to make the best use <br> of your reading time
+					.popup-cta-description
+						center(style="color: #666; font-size: 25px;")
+							| Join my launch team <br> to get the free copy of <em> Effortless Reading </em>
+							| & win a hard copy of popular non-fiction title
+					#mc_embed_signup
+						form#mc-embedded-subscribe-form.validate(action='//vutranbooks.us11.list-manage.com/subscribe/post?u=35ceaea81da32be0ee7ccc513&id=17c1e3a18f', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+							#mc_embed_signup_scroll
+								.mc-field-group.hide
+									input#mce-TITLE(type='text', value='#{title}', name='TITLE')
+									input#mce-SUBTITLE(type='text', value='#{description}', name='SUBTITLE')
+									input#mce-FROM(type='text', value='#{from}', name='FROM')
+								.mc-field-group.info-group
+									input#mce-EMAIL.required.email(type='email', value='', name='EMAIL', placeholder='Your email')
+								.mc-field-group.info-group
+									input#mce-NAME(type='text', value='', name='NAME', placeholder='Your name')
+								
+								#mce-responses.clear
+									#mce-error-response.response(style='display:none')
+									#mce-success-response.response(style='display:none')
+								// real people should not fill this in and expect good things - do not remove this or risk form bot signups
+								div(style='position: absolute; left: -5000px;')
+									input(type='text', name='b_35ceaea81da32be0ee7ccc513_17c1e3a18f', tabindex='-1', value='')
+								.clear
+									input#mc-embedded-subscribe.btn.btn-join.button(type='submit', value='GET FREE COPY', name='subscribe')
+					script(type='text/javascript', src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js')
+					script(type='text/javascript').
+						(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='NAME';ftypes[1]='text';fnames[3]='MMERGE3';ftypes[3]='radio';fnames[4]='MMERGE4';ftypes[4]='radio';fnames[5]='MMERGE5';ftypes[5]='radio';fnames[2]='TITLE';ftypes[2]='text';fnames[6]='SUBTITLE';ftypes[6]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
+					// End mc_embed_signup
+		nav(class="primary-nav")
+			ul.primary-menu
+				li#item1.menu-item
+					a(href="/") Home
+				li#item2.menu-item 
+					a(href="#resources") Resources
+				li#item3.menu-item 
+					a(href="/bonus") Bonus
+		.banner
+			.container
+				.title-section DISCOUNTED on KINDLE Jan 11.  <a href="http://amzn.to/1QojoBr" target="_blank">Get it on Amazon.</a>
+				
+		.hero 
+			.container 
+				.col-md-6
+					.book-details
+						.title
+							| Effortless Reading 
+						.subtitle 
+							| The Simple Ways to Read and Guarantee Remarkable Result
+						.description 
+				
+						.cta 
+							a.cta-button(href="http://amzn.to/1NT6cnM", target="_blank") Get it on Amazon
+				.col-md-6.book-cover
+					img(src='../img/BookCover.jpg', style='height: 450px')
+		
+		.content-section
+			.container
+				.content-blur
+					center
+					| The book offers a new approach to reading non-fiction. By applying this simple approach, you will, one again, in control of your self-development. 4X your reading with half the effort. No speed reading skill required.
+		
+						
+		.content-section.alternative
+			.container
+				.resource-title
+					| WHAT READERS THINK
+				.row
+					.col-md-10.col-md-offset-1.testimonial-container
+						img.quote-icon(src='../img/QuoteIcon.png')
+						.testimonial-text
+							| This book is for those of us who want to read many books, but also learn how to maximize our learning while reading!
+						.testimonial-author
+							| CLAUDIA SVARTEFOSS, BEST-SELLER, AUTHOR OF POSITIVELY PERFECT
+				.row
+					.col-md-10.col-md-offset-1.testimonial-container
+						img.quote-icon(src='../img/QuoteIcon.png')
+						.testimonial-text
+							| What I like about the book is that it confirmed a lot of things I do. I read very fast and always felt like a little bit of a cheat somehow. Vu just gave me a pass and stamp of approval!
+						.testimonial-author
+							| Mimi Emmanuel, author of My Story of Survival
+	
+				.row
+					.col-md-10.col-md-offset-1.testimonial-container
+						img.quote-icon(src='../img/QuoteIcon.png')
+						.testimonial-text
+							| If you're someone who loves to read and wants to consume as much information as possible while balancing everything else in your life, 'Effortless Reading' is absolutely a must read.
+						.testimonial-author
+							| Melita Vlatko-Rulo, Writer & Author
+	
+				.row
+					.col-md-10.col-md-offset-1.testimonial-container
+						img.quote-icon(src='../img/QuoteIcon.png')
+						.testimonial-text
+							| The author delivers a well-written book and teaches skills on how to read faster but still retain the valuable insights you need for your personal development and success using his deliberate reading method
+						.testimonial-author
+							| Kath Jones, Writer & Author
+	
+		.content-section
+			.container
+				#resources.resource-title
+					| RESOURCES 
+				.row(style="margin-bottom: 30px")
+					.col-md-6.col-md-offset-3
+						h2 Personality Test
+						ul.item-list
+							li 
+								a(href="http://www.16personalities.com/free-personality-test") MBTI Test (Free)
+							li 
+								a(href="http://strengths.gallup.com/default.aspx") StrengthFinder 2.0
+							li 
+								a(href="http://www2.amk.fi/mater/kauppa_ja_talous/demand_forecasting/vak.php") Visual-Auditive-Kinesthetic Test	
+				.row(style="margin-bottom: 30px")
+					.col-md-6.col-md-offset-3				
+						h2 Other Resources
+						ul.item-list
+							li
+								a(href="http://www.eofire.com/books/") Books Recommended by Entrepreneurs (EOFire)
+							li 
+								a(href="http://www.gatesnotes.com/Books") Bill Gates's book reviews
+							li
+								a(href="http://buffettsbooks.com/books-by-warren-buffett.html") Billionaire's Favorite Books
+		
+		.clear
+		.footer-section 
+			.container 
+				center © 2015 Vu Tran
