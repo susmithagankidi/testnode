@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo npm install -g nodemon
-sudo npm install forever -g
-sudo npm install
-sudo npm rebuild node-sass
+npm install -g nodemon
+npm install forever -g
+npm install
+npm rebuild node-sass
